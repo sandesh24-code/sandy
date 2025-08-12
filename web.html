@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hamro Uphaar Sikkim - Gift Hampers & Flowers</title>
+   
+   <!-- Tailwind CSS -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   
+   <!-- Google Fonts: Inter and a decorative font (Dancing Script) -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+   
+   <!-- Font Awesome for Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   <style>
+       /* Custom styles to integrate the fonts */
+       body {
+           font-family: 'Inter', sans-serif;
+           background-color: #FFF8F9; /* A very light pink background */
+       }
+       .font-dancing-script {
+           font-family: 'Dancing Script', cursive;
+       }
+       /* Simple animation for elements on scroll */
+       .scroll-animate {
+           opacity: 0;
+           transform: translateY(30px);
+           transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+       }
+       .scroll-animate.in-view {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   </style>
+</head>
+<body class="text-gray-800">
+
+   <!-- Header & Navigation -->
+   <header class="bg-white shadow-md sticky top-0 z-50">
+       <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+           <div class="flex items-center space-x-3">
+               <!-- Logo -->
+               <div class="w-12 h-12 bg-[#FFD1DC] rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-gift text-2xl text-white"></i>
+               </div>
+               <a href="#" class="text-2xl font-bold text-gray-800">
+                   <span class="font-dancing-script text-pink-500">Hamro Uphaar</span>
+                   <span class="text-sm font-sans font-semibold text-gray-500">Sikkim</span>
+               </a>
+           </div>
+           <!-- Desktop Menu -->
+           <div class="hidden md:flex items-center space-x-8">
+               <a href="#home" class="text-gray-600 hover:text-pink-500 transition duration-300">Home</a>
+               <a href="#products" class="text-gray-600 hover:text-pink-500 transition duration-300">Hampers</a>
+               <a href="#reviews" class="text-gray-600 hover:text-pink-500 transition duration-300">Reviews</a>
+               <a href="#contact" class="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600 transition duration-300 shadow-lg">Order Now</a>
+           </div>
+           <!-- Mobile Menu Button -->
+           <div class="md:hidden">
+               <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                   <i class="fa-solid fa-bars text-2xl"></i>
+               </button>
+           </div>
+       </nav>
+       <!-- Mobile Menu -->
+       <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+           <a href="#home" class="block text-gray-600 hover:text-pink-500">Home</a>
+           <a href="#products" class="block text-gray-600 hover:text-pink-500">Hampers</a>
+           <a href="#reviews" class="block text-gray-600 hover:text-pink-500">Reviews</a>
+           <a href="#contact" class="block bg-pink-500 text-white text-center mt-2 px-4 py-2 rounded-full hover:bg-pink-600">Order Now</a>
+       </div>
+   </header>
+
+   <main>
+       <!-- Hero Section -->
+       <section id="home" class="relative bg-cover bg-center text-white py-20 md:py-32" style="background-image: url('https://placehold.co/1200x800/FFF0F5/DB2777?text=Beautiful+Hampers')">
+           <div class="absolute inset-0 bg-black opacity-40"></div>
+           <div class="container mx-auto px-6 text-center relative z-10">
+               <h1 class="text-4xl md:text-6xl font-bold font-dancing-script mb-4">Crafted with Love, Gifted with Joy</h1>
+               <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Customised gift hampers for all your special occasions. Delivering smiles across Sikkim.</p>
+               <a href="#products" class="bg-white text-pink-500 font-bold py-3 px-8 rounded-full text-lg hover:bg-pink-100 transition duration-300 shadow-xl">Explore Our Hampers</a>
+           </div>
+       </section>
+
+       <!-- About Section -->
+       <section id="about" class="py-16 md:py-24">
+           <div class="container mx-auto px-6 text-center scroll-animate">
+               <h2 class="text-3xl md:text-4xl font-bold mb-4">Welcome to <span class="font-dancing-script text-pink-500">Hamro Uphaar</span></h2>
+               <div class="w-24 h-1 bg-pink-400 mx-auto mb-8"></div>
+               <p class="max-w-3xl mx-auto text-gray-600 text-lg">
+                   We believe that the best gifts come from the heart. Based in beautiful Sikkim, we specialize in creating unique, handcrafted gift hampers filled with delightful goodies for every occasion. From birthdays to festivals, we help you express your love and appreciation with a personal touch.
+               </p>
+           </div>
+       </section>
+
+       <!-- Products Section -->
+       <section id="products" class="py-16 md:py-24 bg-white">
+           <div class="container mx-auto px-6">
+               <div class="text-center mb-12 scroll-animate">
+                   <h2 class="text-3xl md:text-4xl font-bold">Our Signature Hampers</h2>
+                   <p class="text-gray-600 mt-2">Share your budget with us and we'll craft a custom gift just for you!</p>
+               </div>
+               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                   <!-- Product Card 1 -->
+                   <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 scroll-animate">
+                       <img src="https://placehold.co/600x400/FFE4E6/C2185B?text=Celebration+Hamper" alt="Celebration Hamper" class="w-full h-64 object-cover">
+                       <div class="p-6">
+                           <h3 class="text-2xl font-bold mb-2">Celebration Hamper</h3>
+                           <p class="text-gray-600 mb-4">Perfect for birthdays, anniversaries, and milestones. Packed with gourmet treats and festive joy.</p>
+                           <span class="text-xl font-bold text-pink-500">Starting at ₹1,500</span>
+                       </div>
+                   </div>
+                   <!-- Product Card 2 -->
+                   <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 scroll-animate" style="transition-delay: 100ms;">
+                       <img src="https://placehold.co/600x400/FFF0F5/C2185B?text=Rakhi+Special" alt="Rakhi Special Hamper" class="w-full h-64 object-cover">
+                       <div class="p-6">
+                           <h3 class="text-2xl font-bold mb-2">Rakhi Special</h3>
+                           <p class="text-gray-600 mb-4">A beautiful collection to celebrate the bond of siblings. Thoughtfully curated for Raksha Bandhan.</p>
+                            <span class="text-xl font-bold text-pink-500">Starting at ₹999</span>
+                       </div>
+                   </div>
+                   <!-- Product Card 3 -->
+                   <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 scroll-animate" style="transition-delay: 200ms;">
+                       <img src="https://placehold.co/600x400/F8BBD0/C2185B?text=Pamper+Yourself+Kit" alt="Pamper Yourself Kit" class="w-full h-64 object-cover">
+                       <div class="p-6">
+                           <h3 class="text-2xl font-bold mb-2">Pamper Yourself Kit</h3>
+                           <p class="text-gray-600 mb-4">A luxurious selection of self-care essentials. The perfect gift for relaxation and rejuvenation.</p>
+                           <span class="text-xl font-bold text-pink-500">Starting at ₹1,200</span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- Testimonials Section -->
+       <section id="reviews" class="py-16 md:py-24">
+           <div class="container mx-auto px-6">
+               <div class="text-center mb-12 scroll-animate">
+                   <h2 class="text-3xl md:text-4xl font-bold">What Our Customers Say</h2>
+                   <p class="text-gray-600 mt-2">We love making our customers happy!</p>
+               </div>
+               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                   <!-- Testimonial 1 -->
+                   <div class="bg-white p-8 rounded-xl shadow-lg scroll-animate">
+                       <div class="flex items-center mb-4">
+                           <img src="https://placehold.co/100x100/E1BEE7/ffffff?text=S" alt="Customer Avatar" class="w-14 h-14 rounded-full mr-4">
+                           <div>
+                               <p class="font-bold">Sudha C.</p>
+                               <div class="text-yellow-400">
+                                   <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                               </div>
+                           </div>
+                       </div>
+                       <p class="text-gray-600">"Absolutely loved the hamper! The customization was perfect and the delivery was so quick. Highly recommended!"</p>
+                   </div>
+                    <!-- Testimonial 2 -->
+                   <div class="bg-white p-8 rounded-xl shadow-lg scroll-animate" style="transition-delay: 100ms;">
+                       <div class="flex items-center mb-4">
+                           <img src="https://placehold.co/100x100/F48FB1/ffffff?text=R" alt="Customer Avatar" class="w-14 h-14 rounded-full mr-4">
+                           <div>
+                               <p class="font-bold">Rohan T.</p>
+                               <div class="text-yellow-400">
+                                   <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                               </div>
+                           </div>
+                       </div>
+                       <p class="text-gray-600">"The best gift service in Sikkim. They really listen to what you want and create something magical."</p>
+                   </div>
+                    <!-- Testimonial 3 -->
+                   <div class="bg-white p-8 rounded-xl shadow-lg scroll-animate" style="transition-delay: 200ms;">
+                       <div class="flex items-center mb-4">
+                           <img src="https://placehold.co/100x100/CE93D8/ffffff?text=A" alt="Customer Avatar" class="w-14 h-14 rounded-full mr-4">
+                           <div>
+                               <p class="font-bold">Anjali G.</p>
+                               <div class="text-yellow-400">
+                                   <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                               </div>
+                           </div>
+                       </div>
+                       <p class="text-gray-600">"Beautiful presentation and great quality products inside the hamper. My friend was so happy with her gift."</p>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- Contact / How to Order Section -->
+       <section id="contact" class="py-16 md:py-24 bg-pink-50">
+           <div class="container mx-auto px-6 text-center scroll-animate">
+               <h2 class="text-3xl md:text-4xl font-bold">Ready to Order?</h2>
+               <p class="text-gray-600 mt-2 mb-8 max-w-2xl mx-auto">We're excited to create the perfect gift for you! As we're just starting out, all orders are currently taken through our Instagram page.</p>
+               <a href="https://www.instagram.com/hamro_upahaar.sikkim" target="_blank" class="bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold py-4 px-10 rounded-full text-lg hover:from-pink-600 hover:to-rose-600 transition duration-300 shadow-xl inline-flex items-center">
+                   <i class="fab fa-instagram mr-3 text-2xl"></i> Message Us on Instagram
+               </a>
+               <p class="text-gray-500 mt-8">Delivery available all around Sikkim! <i class="fas fa-map-marker-alt text-pink-500 ml-1"></i></p>
+           </div>
+       </section>
+   </main>
+
+   <!-- Footer -->
+   <footer class="bg-gray-800 text-white">
+       <div class="container mx-auto px-6 py-8">
+           <div class="flex flex-col md:flex-row justify-between items-center">
+               <div class="text-center md:text-left mb-4 md:mb-0">
+                   <p class="font-bold text-lg font-dancing-script text-pink-400">Hamro Uphaar Sikkim</p>
+                   <p class="text-gray-400 text-sm">Your perfect gifting partner.</p>
+               </div>
+               <div class="flex space-x-6">
+                   <a href="https://www.instagram.com/hamro_upahaar.sikkim" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                       <i class="fab fa-instagram text-2xl"></i>
+                   </a>
+                   <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                       <i class="fab fa-facebook-f text-2xl"></i>
+                   </a>
+                   <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                       <i class="fab fa-whatsapp text-2xl"></i>
+                   </a>
+               </div>
+           </div>
+           <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-500 text-sm">
+               <p>© 2024 Hamro Uphaar Sikkim. All Rights Reserved.</p>
+               <p class="mt-1">Website designed as a BCA Project Concept.</p>
+           </div>
+       </div>
+   </footer>
+
+   <script>
+       // JavaScript for mobile menu toggle
+       const mobileMenuButton = document.getElementById('mobile-menu-button');
+       const mobileMenu = document.getElementById('mobile-menu');
+
+       mobileMenuButton.addEventListener('click', () => {
+           mobileMenu.classList.toggle('hidden');
+       });
+
+       // JavaScript for scroll animations
+       const scrollAnimateElements = document.querySelectorAll('.scroll-animate');
+
+       const observer = new IntersectionObserver((entries) => {
+           entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                   entry.target.classList.add('in-view');
+               }
+           });
+       }, {
+           threshold: 0.1 // Trigger when 10% of the element is visible
+       });
+
+       scrollAnimateElements.forEach(element => {
+           observer.observe(element);
+       });
+   </script>
+
+</body>
+</html>
